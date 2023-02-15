@@ -3,88 +3,14 @@
   background:#000000;
 }
 
-.jquery-lightbox
-{
-  padding:17px 0;
-  background:#FFFFFF;
-  position:relative;
-}
 
-.jquery-lightbox-border-top-left,
-.jquery-lightbox-border-top-right,
-.jquery-lightbox-border-top-middle,
-.jquery-lightbox-border-bottom-left,
-.jquery-lightbox-border-bottom-middle,
-.jquery-lightbox-border-bottom-right
-{
-  position:absolute;
-  height:7px;
-  width:12%;
-  z-index:7000;
-  background:#FFFFFF;
-  overflow:hidden;
-}
 
-.jquery-lightbox-border-top-left
-{
-  top:0;
-  left:0;
-}
-
-.jquery-lightbox-border-top-right
-{
-  top:0;
-  right:0;
-}
-
-.jquery-lightbox-border-top-middle
-{
-  width:78%;
-  top:0;
-  left:12%;
-}
-
-.jquery-lightbox-border-bottom-left
-{
-  bottom:0;
-  left:0;
-}
-
-.jquery-lightbox-border-bottom-right
-{
-  bottom:0;
-  right:0;
-}
-
-.jquery-lightbox-border-bottom-middle
-{
-  width:78%;
-  bottom:0;
-  left:12%;
-}
-
-.jquery-lightbox-title
-{
-  background:#FFFFFF;
-  color:#000000;
-  font-family:verdana,arial,serif;
-  font-size:11px;
-  line-height:14px;
-  padding:5px 8px;
-  margin:12px 0 0;
-  position:absolute;
-  top:100%;
-  z-index:7002;
-  opacity:0.9;
-}
 
 .jquery-lightbox-html
 {
   position:relative;
   z-index:7000;
   border:0;
-  border-left:7px solid #FFFFFF;
-  border-right:7px solid #FFFFFF;
   padding:0px 15px;
   vertical-align:top;
 }
@@ -141,7 +67,7 @@
 
 .jquery-lightbox-button-close
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -157px 8px;
+  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -160px 8px;
   position:absolute;
   top:12px;
   right:-26px;
@@ -151,7 +77,7 @@
 
 .jquery-lightbox-button-close:hover
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -157px -30px;
+  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -160px -30px;
 }
 
 .jquery-lightbox-button-close span,
