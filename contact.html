@@ -71,9 +71,7 @@
              <a class="menu__nav-item" href="aboutme.html">About me</a>
              <a class="menu__nav-item" href="contact.html">Contact</a>
             <nav class="social-footer">
-          <a href="https://www.facebook.com/thomas.rolland.tomroll"><i class="fa fa-facebook"></i></a>
           <a href="https://www.behance.net/tomroll"><i class="fa fa-behance"></i></a>
-          <a href="https://www.flickr.com/photos/tomroll"><i class="fa fa-flickr"></i></a>
           <a href="https://dribbble.com/tomroll"><i class="fa fa-dribbble"></i></a>
        </nav>
         </nav>
@@ -87,45 +85,15 @@
     <div class="text-intro contactcenter">
           <div class="one-column">
             <h1>Contact</h1>
-            <p>To contact me please use the contact form visible.<br/>When sending files, please use the following e-mail:<br/><a href="mailto:tomroll@orange.fr">tomroll@orange.fr</a></p>
+            <p> Contact me at the following mail address:<br/><a href="mailto:tomroll@orange.fr">tomroll@outlook.fr</a></p>
             </div>
       <div class="two-column">      
-     <!-- #form_contact -->     
-      <div id="contactform">
-       
-    <form action="process.php" id="contact" method="POST">
-        <ul>
-          <li>   
-            <label for="nom" class="nom">Nom</label>
-            <br /><input id="nom" name="nom" type="text" required>
-            <i id="msg_nom"></i>
-          </li> 
-           <li>
-            <label for="sujet" class="sujet">Sujet</label>
-            <br /><input id="sujet" name="sujet" type="text" required>
-            <i id="msg_sujet"></i>
-        </li>
-        <li>
-            <label for="email">Email</label>
-            <br /><input id="email" name="email" type="email" required>
-            <i id="msg_email"></i>
-        </li>
-        <li>
-            <label for="message">Message</label>
-            <br /><textarea id="message" name="message" rows="10" cols="80"></textarea>
-           <i id="msg_message"></i>
-        </li>
-        <li>
-            <input id="submit" type="submit" value="Envoyer" />
-        </li>
-        </ul>
-    </form>
-        
-  
-</div>
-            
-            <!-- end of #form_contact -->
-            
+
+
+
+
+    </div>
+                        
     </div>
       </div>
         
@@ -160,48 +128,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   <script src="js/jquery.jkit.1.2.16.min.js"></script>
 
-
-  <script>
-        $(function(){
-            $("#contact").submit(function(event){
-                var nom        = $("#nom").val();
-                var sujet      = $("#sujet").val();
-                var email      = $("#email").val();
-                var message    = $("#message").val();
-                var dataString = nom + sujet + email + message;
-                var msg_all    = "Merci de remplir tous les champs";
-                var msg_alert  = "Merci de remplir ce champs";
-
-                if (dataString  == "") {
-                    $("#msg_all").html(msg_all);
-                } else if (nom == "") {
-                    $("#msg_nom").html(msg_alert);
-                } else if (sujet == "") {
-                    $("#msg_sujet").html(msg_alert);
-                } else if (email == "") {
-                    $("#msg_email").html(msg_alert);
-                } else if (message == "") {
-                    $("#msg_message").html(msg_alert);
-                } else {
-                    $.ajax({
-                        type : "POST",
-                        url: $(this).attr("action"),
-                        data: $(this).serialize(),
-                        success : function() {
-                            $("#contact").html("<h2>✔ Votre message a bien été envoyé</h2>");
-                        },
-                        error: function() {
-                            $("#contact").html("<p>Erreur d'appel, le formulaire ne peut pas fonctionner</p>");
-                        }
-                    });
-                }
-
-                return false;
-            });
-        });
-</script> 
-    
-    <!--AutoHidingNav-->  
+  
+ <!--AutoHidingNav-->  
     
 <script>
 	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
