@@ -67,17 +67,17 @@
 
 .jquery-lightbox-button-close
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -160px 8px;
+  background: url(images/jquery-lightbox-theme.gif) no-repeat -160px 7px;
   position:absolute;
   top:12px;
   right:-26px;
-  width:28px;
-  height:30px;
+  width:27px;
+  height:27px;
 }
 
 .jquery-lightbox-button-close:hover
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -160px -30px;
+  background: url(images/jquery-lightbox-theme.gif) no-repeat -160px -31px;
 }
 
 .jquery-lightbox-button-close span,
@@ -175,7 +175,7 @@
 
 .jquery-lightbox-navigator .jquery-lightbox-button-left span
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat -37px 10px;
+  background:#FFFFFF url(images/jquery-lightbox-theme2.gif) no-repeat -37px 9px;
   width:0;
   height:0;
   overflow:hidden;
@@ -187,7 +187,7 @@
   z-index:7003;
   cursor:hand;
   opacity:0;
-  filter: alpha(opacity=20);
+  filter: alpha(opacity=50);
 }
 
 .jquery-lightbox-navigator .jquery-lightbox-button-left:hover span
@@ -207,7 +207,7 @@
 
 .jquery-lightbox-navigator .jquery-lightbox-button-right span
 {
-  background:#FFFFFF url(images/jquery-lightbox-theme.gif) no-repeat 9px 10px;
+  background:#FFFFFF url(images/jquery-lightbox-theme2.gif) no-repeat 9px 9px;
   width:0;
   height:0;
   overflow:hidden;

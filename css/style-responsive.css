@@ -288,7 +288,7 @@
 
 @media all and (max-width: 640px)and (min-width: 480px){
     
-  .menu__nav-item:not(:last-child) {margin-bottom: 0px !important;}
+  .menu__nav-item:not(:last-child) {margin-bottom: 20px !important;}
   .menu__nav-item {font-size: 22px;} 
   .menu__nav {margin-top: 100px !important;}
 }
@@ -351,6 +351,12 @@
   .one-column, .two-column{
     width:100%;
   }
+
+  .two-column.aboutme p{
+    margin-top: 30px;
+
+  }
+
   
   .contact-one, .contact-two, .contact-three{
     width:100%;
