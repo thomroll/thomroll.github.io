@@ -126,11 +126,11 @@
         },
         modal    : false,
         overlay  : {
-          opacity: 0.6
+          opacity: 0.9
         },
         animation: {
           show: {
-            duration: 400,
+            duration: 100,
             easing  : "easeOutBack"
           },
           close: {
@@ -138,7 +138,7 @@
             easing  : "easeOutBack"
           },
           move: {
-            duration: 800,
+            duration: 600,
             easing  : "easeOutBack"
           },
           shake: {
