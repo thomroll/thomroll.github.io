@@ -97,7 +97,7 @@
     <div class="grid">
         <ul>
             <li>
-               <a href="img/photos/DSC01306.jpg" class="lightbox" title="" data-rel="gal[1]"><img src="img/portfolio/DSC01306.jpg" alt="" width="0px" /></a>
+               <a href="img/photos/DSC01306.jpg" class="lightbox"  title="" data-rel="gal[1]"><img src="img/portfolio/DSC01306.jpg"  alt="" width="0px" id="pleinEcran" onclick="afficherEnPleinEcran(this) /></a>
          </li>
              <li>
                 <a href="img/photos/DSC09796.jpg" class="lightbox" title=""  data-rel="gal[1]"><img src="img/portfolio/DSC09796.jpg" alt="" width="0px" /></a>
@@ -352,9 +352,6 @@
           <a href="img/photos/DSC09536.jpg" class="lightbox" title="" data-rel="gal[1]"><img src="img/portfolio/DSC09536.jpg" alt="" width="0px" /></a>
         </li>
         <li>
-          <a href="img/photos/DSC02361.jpg" class="lightbox" title="" data-rel="gal[1]"><img src="img/portfolio/DSC02361.jpg" alt="" width="0px" /></a>
-        </li>
-        <li>
           <a href="img/photos/DSC00579.jpg" class="lightbox" title="" data-rel="gal[1]"><img src="img/portfolio/DSC00579.jpg" alt="" width="0px" /></a>
         </li>
         <li>
@@ -397,6 +394,24 @@
 </div>
 
 <!--Scripts-->
+
+
+
+<script type="text/javascript">
+  window.onload = function afficherEnPleinEcran(image) {
+    var pleinEcran = document.createElement('div');
+    pleinEcran.id = 'pleinEcran';
+    pleinEcran.onclick = function() {
+        document.body.removeChild(pleinEcran);
+    };
+    var img = document.createElement('img');
+    img.src = image.src;
+    pleinEcran.appendChild(img);
+    document.body.appendChild(pleinEcran);
+}
+
+</script>
+
     
 <script type="text/javascript" src="js/jquery-latest.js"></script>
 <script type="text/javascript">
@@ -425,6 +440,7 @@
       
   </script>  
     
+
     
 <!--Grid-->    
     

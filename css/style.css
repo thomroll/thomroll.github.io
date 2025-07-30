@@ -359,6 +359,23 @@ background:black;
 cursor:pointer;
 }
 
+#pleinEcran {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#pleinEcran img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 
 .menu-index i{
 float:right;

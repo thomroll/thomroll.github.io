@@ -374,7 +374,7 @@ transition: .25s ease-in-out;
 }
 
 a.header__menu, .menu__nav-item {
-    color: #fff;
+    color: #7c7c7c;
     font-family: "akrobatsemibold", sans-serif;
     font-size: 17px;
     letter-spacing: 3px;
